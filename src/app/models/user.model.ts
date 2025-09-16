@@ -1,5 +1,5 @@
 import { Schema, model, Document } from "mongoose";
-import { ROLES, UserRole } from "./role.model";
+import { ROLES, UserRole } from "./role.model.js";
 
 export class UserClass extends Document {
   username!: string;
