@@ -1,6 +1,6 @@
-import { ApiResponse } from "../models/api-response.model";
-import { UserService } from "../services/user.service";
-import { Logger } from "../config/logger";
+import { ApiResponse } from "../models/api-response.model.js";
+import { UserService } from "../services/user.service.js";
+import { Logger } from "../config/logger.js";
 import { Request, Response } from "express";
 
 export class UserController {

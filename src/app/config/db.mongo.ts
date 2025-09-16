@@ -1,7 +1,7 @@
 // src/app/config/database.ts
 import mongoose from "mongoose";
-import { Logger } from "./logger";
-import { environment } from "./environment";
+import { Logger } from "./logger.js";
+import { environment } from "./environment.js";
 
 export async function connectDB(): Promise<void> {
   try {

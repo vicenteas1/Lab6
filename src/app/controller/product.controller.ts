@@ -1,5 +1,5 @@
-import { ProductService } from "../services/product.service";
-import { Logger } from "../config/logger";
+import { ProductService } from "../services/product.service.js";
+import { Logger } from "../config/logger.js";
 import { Request, Response } from "express";
 
 export class ProductController {

@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { UserController } from '../controller/user.controller.js';
-import { UserServiceImpl } from '../services/impl/user.service.impl';
-import { validateToken } from 'middleware/authorization';
+import { UserServiceImpl } from '../services/impl/user.service.impl.js';
+import { validateToken } from '../middleware/authorization.js';
 
 const router = Router();
 

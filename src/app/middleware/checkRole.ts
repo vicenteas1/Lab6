@@ -1,4 +1,4 @@
-import { UserRole } from "../models/role.model";
+import { UserRole } from "../models/role.model.js";
 import { Request, Response, NextFunction } from "express";
 
 export const requireRole =

@@ -1,10 +1,10 @@
 import { ApiResponse } from '../../models/api-response.model.js';
 import { UserService } from '../../services/user.service.js';
 import { UserClass, UserModel } from "../../models/user.model.js";
-import { Logger } from 'config/logger';
+import { Logger } from '../../config/logger.js';
 import bcryptjs from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { LoginResult } from '../../interfaces/login.interface';
+import { LoginResult } from '../../interfaces/login.interface.js';
 import { Types } from 'mongoose';
 
 type SafeUser = Pick<UserClass, "id" | "username" | "email" | "role" | "fech_creacion" | "fech_modif">;

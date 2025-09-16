@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { ProductController } from '../controller/product.controller.js';
 import { ProductServiceImpl } from '../services/impl/product.service.impl.js';
-import { requireBuyer, requireSeller } from 'middleware/checkRole';
-import { validateToken } from 'middleware/authorization';
+import { requireBuyer, requireSeller } from '../middleware/checkRole.js';
+import { validateToken } from '../middleware/authorization.js';
 
 const router = Router();
 
