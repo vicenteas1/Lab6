@@ -22,7 +22,8 @@ const port = process.env.PORT || 3000;
 
 const allowedOrigins: string[] = [
   'https://lab6-qlw6.onrender.com',
-  'https://lab6-qlw6.onrender.com/api-docs'
+  'https://lab6-qlw6.onrender.com/api-docs',
+  'https://lab6-qlw6.onrender.com/api-docs/#'
 ];
 
 app.use(express.json());
