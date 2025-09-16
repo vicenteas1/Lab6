@@ -2,7 +2,7 @@ import express from 'express';
 //import cors from 'cors';
 //configs
 import { Logger } from './config/logger.js';
-import { connectDB } from 'config/db.mongo.js';
+import { connectDB } from './config/db.mongo.js';
 import { fileURLToPath } from 'url';
 // routes
 import ProductsRouter from './routes/product.routes.js';
