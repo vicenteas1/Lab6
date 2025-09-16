@@ -7,6 +7,7 @@ info:
     Incluye autenticación Bearer (JWT) y control de roles (buyer/seller) según los *middlewares* usados en las rutas.
 
 servers:
+  - url: /api
   - url: http://localhost:3000/api
 
 tags:
