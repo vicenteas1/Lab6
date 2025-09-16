@@ -1,5 +1,5 @@
 import express from 'express';
-//import cors from 'cors';
+import cors from 'cors';
 //configs
 import { Logger } from './config/logger.js';
 import { connectDB } from './config/db.mongo.js';
@@ -20,10 +20,25 @@ const swaggerDocument = YAML.load(path.join(__dirname, 'config', 'swagger.yaml')
 const app = express();
 const port = process.env.PORT || 3000;
 
+const allowedOrigins: string[] = [
+  'https://lab6-qlw6.onrender.com'
+];
+
 app.use(express.json());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/api/users', UsersRouter);
 app.use('/api/products', ProductsRouter);
+app.use(cors({
+  credentials: true,
+  origin(origin: any, callback: any ) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    Logger.info(`Origen no admitido. origin: ${origin}`);
+    return callback(new Error(`Origen no admitido: ${origin}`));
+  },
+  methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
+}));
 
 connectDB().then(() => {
   app.listen(port, () => {
