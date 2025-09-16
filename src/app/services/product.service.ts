@@ -1,4 +1,4 @@
-import { ProductClass } from '@models/product.model.js';
+import { ProductClass } from '../models/product.model.js';
 import { ApiResponse } from '../models/api-response.model.js';
 
 

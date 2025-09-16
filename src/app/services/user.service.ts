@@ -1,6 +1,6 @@
-import { UserClass } from '@models/user.model.js';
+import { UserClass } from '../models/user.model.js';
 import { ApiResponse } from '../models/api-response.model.js';
-import { LoginResult } from 'interfaces/login.interface.js';
+import { LoginResult } from '../interfaces/login.interface.js';
 
 export type SafeUser = Pick<UserClass, "id" | "username" | "email" | "role" | "fech_creacion" | "fech_modif">;
 export interface UserService {

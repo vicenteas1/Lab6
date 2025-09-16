@@ -1,6 +1,6 @@
-import { ApiResponse } from '@models/api-response.model.js';
-import { ProductService } from '@services/product.service.js';
-import { ProductClass, ProductModel } from "@models/product.model.js";
+import { ApiResponse } from '../../models/api-response.model.js';
+import { ProductService } from '../../services/product.service.js';
+import { ProductClass, ProductModel } from "../../models/product.model.js";
 import { Logger } from 'config/logger';
 import { Types } from 'mongoose';
 

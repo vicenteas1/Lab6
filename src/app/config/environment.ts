@@ -1,4 +1,4 @@
-import { Environment } from "interfaces/environment.interface";
+import { Environment } from "../interfaces/environment.interface";
 const mdbURI = process.env.MDBURI;
 const mdbPORT = process.env.MDBPORT;
 const mdbDB = process.env.MDBDB;

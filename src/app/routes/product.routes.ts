@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { ProductController } from '@controllers/product.controller.js';
-import { ProductServiceImpl } from '@services/impl/product.service.impl.js';
+import { ProductController } from '../controller/product.controller.js';
+import { ProductServiceImpl } from '../services/impl/product.service.impl.js';
 import { requireBuyer, requireSeller } from 'middleware/checkRole';
 import { validateToken } from 'middleware/authorization';
 
